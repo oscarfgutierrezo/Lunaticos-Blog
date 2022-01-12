@@ -8,13 +8,16 @@ html {
 body {
     padding: 0;
     margin: 0;
+    font-size: 1.6rem;
+    font-family:'Roboto', sans-serif;
+}
+
+.body-home {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    font-size: 1.6rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -33,11 +36,11 @@ a {
     height: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #284B63
+    background-color: #284B63;
 }
 
 .header__logo {
-    width: 21rem;
+    width: 20rem;
     height: 100%;
     margin-left: 10rem;
     display: flex;
@@ -55,7 +58,7 @@ a {
 }
 
 .header__icons {
-    width: 21rem;
+    width: 20rem;
     height: 100%;
     justify-self: end;
     display: flex;
@@ -122,17 +125,19 @@ a {
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
     background-image: url('../images/home__background.png');
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home section {
     display: grid;
-    grid-template-rows: 1fr 5rem;
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
     grid-column: 2;
     justify-items: center;
-    height: 28rem;
     align-self: flex-end;
-    margin-bottom: 18rem;
+    margin-bottom: 0;
 }
 
 .home__text {
@@ -140,32 +145,147 @@ a {
     font-weight: 700;
     text-align: center;
     color: #D9D9D9;
-    align-self: center;
+    align-self: flex-end;
     padding: 0 20rem;
-    margin: 0;
-    
+    margin-bottom: 6%;    
 }
 
 .home__button {
     width: 12rem;
-    height: 5rem;
+    height: 4rem;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 0.5rem;
     border: 1px solid #D9D9D9;
     background-color: #D9D9D9;
-    padding: 0 0.6rem;
-}
-
-.home__button a{
+    line-height: 3.8rem;
     color: black;
+    text-align: center;
 }
 
-.home__button:hover{
+.home__button:hover {
     border: 1px solid white;
     background-color: white;
-    color: #284b63;
+    color: black;
     cursor: pointer;
 }
+
+.main-blogpost {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #D9D9D9;
+    padding: 3rem 10rem;
+    margin-bottom: 4rem;
+}
+
+.main-blogpost__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main-blogpost__info {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 6rem 0rem 6rem 10rem;
+    justify-items: center;
+}
+
+.main-blogpost__info h2 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.main-blogpost__info p {
+    font-size: 1.8rem;
+    text-align: justify;
+    align-self: center;
+}
+
+.main-blogpost__info a{
+    width: 10rem;
+    height: 3rem;
+    color: black;
+    background-color: #fff;
+    align-self: flex-end;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 1px solid #353535;
+    line-height: 3rem;
+}
+
+.main-blogpost__info a:hover {
+    background-color: #353535;
+    color: #fff;
+}
+
+.secondary-blogpost h2{
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: 0 10rem;
+    grid-column: 2;
+    border-bottom: 1px solid #353535;
+}
+
+.secondary-blogpost__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5rem 10rem 6rem 10rem;
+    gap: 5rem;
+}
+
+.secondary-blogpost__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.secondary-blogpost__content img {
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+}
+
+.secondary-blogpost__content h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.secondary-blogpost__content p{
+    text-align: justify;
+}
+
+.secondary-blogpost__content a{
+    width: 10rem;
+    height: 3rem;
+    color: black;
+    background-color: #fff;
+    align-self: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 1px solid #353535;
+    line-height: 3rem;
+}
+
+.secondary-blogpost__content a:hover {
+    background-color: #353535;
+    color: #fff;
+}
+
+footer {
+    background-color: #284B63;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+footer p{
+    margin: 0
+}
+
+
+
+
 
 
